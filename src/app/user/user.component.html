@@ -1,0 +1,11 @@
+<p>
+  user works!
+</p>
+<input
+        type="text"
+        class="form-control"
+        [(ngModel)]="username">
+<p>{{ username }}</p>
+<button
+        class="btn btn-primary"
+        (click)="onClickDeleteUsername()" [disabled]="username === ''">Delete name</button>
